@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas de Javascript</title>
+        <script>
+            function setDoisDigitos(tempo) {
+                if( tempo < 10){
+                    return "0" + tempo;
+                } else {
+                    return tempo;
+                }
+            }
+
+            var agora = new Date();
+            console.log( setDoisDigitos(agora.getHours()) +"h "+ setDoisDigitos (agora.getMinutes()) +"m "+ setDoisDigitos(agora.getSeconds())+"s " + setDoisDigitos(agora.getMilliseconds())+ "ms");
+            
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
